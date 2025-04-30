@@ -62,16 +62,9 @@ class _MaterialListPageState extends State<MaterialListPage> {
     );
   }
 
-  Future<void> _showMaterialForm(BuildContext context, [MaterialModel? material]) async {
-    final result = await showDialog<Map<String, dynamic>>(
-      context: context,
-      builder: (context) => MaterialFormDialog(material: material),
-    );
 
-    if (result != null) {
-      // Handle save
-    }
-  }
+
+
 
   Future<void> _deleteMaterial(MaterialModel material) async {
     final confirm = await showDialog<bool>(

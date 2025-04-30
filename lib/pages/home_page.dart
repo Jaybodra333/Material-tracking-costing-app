@@ -81,7 +81,6 @@ class _HomePageState extends State<HomePage> {
         index: _selectedIndex,
         children: const [
           _ScannerView(),
-          _LogsView(),
           _TasksView(),
         ],
       ),
